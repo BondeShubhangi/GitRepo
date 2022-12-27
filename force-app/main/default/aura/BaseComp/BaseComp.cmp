@@ -1,4 +1,0 @@
-<aura:component >
-    <aura:registerEvent name="samplecmpEvent" type="c:SampleComponentEvent"/>
-    <lightning:button label="Fire Event" variant="brand" onclick="{!c.childEvent}" />
-</aura:component>
