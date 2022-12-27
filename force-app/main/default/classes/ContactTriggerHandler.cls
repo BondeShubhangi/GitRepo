@@ -9,6 +9,7 @@ public class ContactTriggerHandler {
             for(Contact c:newList)
             {
                 accIds.add(c.AccountId);
+                
             }
         }
         if(oldList != NULL)

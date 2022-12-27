@@ -11,6 +11,7 @@ trigger ContactTrigger on Contact (After insert,After Update,After Delete) {
         }
     }
     
+    
     /*if(Trigger.isAfter && Trigger.isInsert)
 	{
 		ContactTriggerHandler.onAfterInsert(Trigger.new);
