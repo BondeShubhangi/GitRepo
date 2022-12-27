@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <div class="slds-m-around--xx-large">
+        <lightning:card variant="Narrow" title="Create Lead" iconname="standard:lead" class="slds-p-around_medium">
+            <lightning:recordEditForm aura:id="createLeadForm" objectApiName="Lead" onSuccess="{!c.onSuccess}">
+                <lightning:messages />
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2 slds-p-around_medium">
+                        <lightning:inputField fieldName="FirstName"> </lightning:inputField>                    
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning:inputField fieldName="LastName"> </lightning:inputField>   
+                    </div>
+                </div>
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-3 slds-p-around_medium">
+                        <lightning:inputField fieldName="Email"> </lightning:inputField>                    
+                    </div>
+                    <div class="slds-col slds-size_1-of-3">
+                          <lightning:inputField fieldName="Phone"> </lightning:inputField>   
+                    </div>
+                     <div class="slds-col slds-size_1-of-3">
+                          <lightning:inputField fieldName="Company"> </lightning:inputField>   
+                    </div>
+                </div>
+                 <lightning:button type="submit" label="Save" variant="brand"/>
+            </lightning:recordEditForm>
+            
+        </lightning:card>
+    </div>
+</aura:component>

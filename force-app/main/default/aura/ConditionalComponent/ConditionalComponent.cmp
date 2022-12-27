@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute name="num" type="Integer" default="5"/>
+    <aura:if isTrue="{!v.num==5}">
+        Hey,Its Shubhangi Bonde
+        <aura:set attribute="else">
+            Welcome to PLS
+        </aura:set>
+    </aura:if>
+</aura:component>

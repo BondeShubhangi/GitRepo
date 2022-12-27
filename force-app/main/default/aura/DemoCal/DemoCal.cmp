@@ -1,0 +1,24 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <center>Hi welcome Back....</center>
+    
+    <lightning:card  title="Calculator">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2 slds-p-left_x-large slds-p-right_x-large">
+                <lightning:input type="number" name="input1" label="Enter First number:" ></lightning:input>
+            </div>
+            <div class="slds-col slds-size_1-of-2 slds-p-left_x-large slds-p-right_x-large">
+                <lightning:input type="number" name="input2" label="Enter Second number:" ></lightning:input>
+                
+            </div>
+        </div>
+        
+        <center>
+            <lightning:button variant="brand" label="Addition" title="Primary action" onclick="{!Addition}" class="slds-m-left_x-small"></lightning:button>
+            <lightning:button variant="brand" label="Substraction" title="Primary action" onclick="{handleClick}" class="slds-m-left_x-small"></lightning:button>
+            <lightning:button variant="brand" label="Division" title="Primary action" onclick="{handleClick}" class="slds-m-left_x-small"></lightning:button>
+            <lightning:button variant="brand" label="Multiplication" title="Primary action" onclick="{handleClick}" class="slds-m-left_x-small"></lightning:button>
+        </center>
+    </lightning:card>
+    
+    
+</aura:component>
