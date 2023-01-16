@@ -18,7 +18,6 @@ public class OppertrunityTriggerHandler
         //Id devRecordTypeId = Schema.SObjectType.Opportunity.getRecordTypeInfosByName().get('New Customer').getRecordTypeId();
         Id recordTypeId = [Select Id from RecordType where Name LIKE 'New Customer'].Id;
         Contact con = [SELECT Id, LastName, Email FROM Contact Where LastName = 'Test Contact' LIMIT 1];
-        
         for(Opportunity opp : newOppList)
         {
             oppNextStepList.add(opp.NextStep);
