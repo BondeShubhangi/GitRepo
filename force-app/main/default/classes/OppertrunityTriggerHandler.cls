@@ -9,7 +9,7 @@ public class OppertrunityTriggerHandler
     //This method create Task based on metadata record Subject value and send Notification Mail to contact owner
     public static void onAfterInsert(List<Opportunity> newOppList)
     {
-        List<Task> taskList = new List<Task>();
+        List<Task> taskList = new List<Task>(); 
         List<OppertunityMetadata__mdt> mdtnewList = new  List<OppertunityMetadata__mdt>();
         Map<String,OppertunityMetadata__mdt> metadataNextStepMap=new Map<String,OppertunityMetadata__mdt>();
         List<Messaging.SingleEmailMessage> emailList = new List<Messaging.SingleEmailMessage>();
