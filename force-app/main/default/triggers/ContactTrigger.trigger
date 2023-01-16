@@ -10,6 +10,7 @@ trigger ContactTrigger on Contact (After insert,After Update,After Delete) {
             ContactTriggerHandler.onAfterDelete(Trigger.old);
         }
     }
+
     
     
     /*if(Trigger.isAfter && Trigger.isInsert)

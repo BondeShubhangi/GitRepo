@@ -2,7 +2,7 @@
 * 					StageName ='Closed Won' && Type ='New Customer' && CloseDate = Date.today() && RecortType = 'New Customer'
 * 					then new Task will be created with Subject as Metadata Subject value and send Notification Mail to contact owner
 * 					And if record is updated with StageName ='Closed Lost' the associted Task will be deleted and send Notification Mail to contact owner
-* @Author : Shubhangi Bonde
+* @Author : Shubhangi Bonde 
 * */
 
 public class OppertrunityTriggerHandler 
@@ -106,8 +106,8 @@ public class OppertrunityTriggerHandler
                 {
                 Messaging.sendEmail(emailList);
                 }
-
 			}
+            
         }
     }
 }
