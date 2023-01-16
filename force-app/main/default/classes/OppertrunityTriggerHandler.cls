@@ -4,7 +4,6 @@
 * 					And if record is updated with StageName ='Closed Lost' the associted Task will be deleted and send Notification Mail to contact owner
 * @Author : Shubhangi Bonde 
 * */
-
 public class OppertrunityTriggerHandler 
 {
     //This method create Task based on metadata record Subject value and send Notification Mail to contact owner

@@ -2,10 +2,10 @@ trigger OppertrunityTrigger on Opportunity (Before Update,After Insert,After Upd
 {
     if(Trigger.isAfter && Trigger.isInsert)
     {
-		OppertrunityTriggerHandler.onAfterInsert(Trigger.new);
+		  OppertrunityTriggerHandler.onAfterInsert(Trigger.new);
     }
     if(Trigger.isAfter && Trigger.isUpdate)
     {
-		OppertrunityTriggerHandler.onAfterUpdate(Trigger.new,Trigger.oldMap);
+		  OppertrunityTriggerHandler.onAfterUpdate(Trigger.new,Trigger.oldMap);
     } 
 }
